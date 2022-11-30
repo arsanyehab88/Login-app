@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign in</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section id="SignIn" class="d-flex">
+        <div class="container my-5 text-center">
+            <div class="home m-auto w-75 p-5">
+                <h1>Smart Login System</h1>
+                <input type="email" id="signinEmail" class="form-control bg-transparent text-white  my-3" placeholder="Enter your email">
+                <input type="password" id="signinPass" class="form-control bg-transparent text-white  my-3 " placeholder="Enter your password">
+                <p id="log" class="text-danger"></p>
+                <a class="btn btn-outline-info w-100 my-3" href="#"  id="btnIn">Login</a>
+                <p class="text-light">Don’t have an account?
+                    <a href="#signUp" id="btnCUp" class="text-decoration-none text-white">Sign Up</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="signUp" class="d-none">
+        <div class="container my-5 text-center">
+            <div class="home m-auto w-75 p-5">
+                <h1>Smart Login System</h1>
+                <input type="text" id="name" class="form-control bg-transparent  text-white  my-3 " placeholder="Enter your name">
+                <input type="email" id="email" class="form-control bg-transparent text-white  my-3 " placeholder="Enter your email">
+                <input type="password" id="pass" class="form-control bg-transparent  text-white  my-3 " placeholder="Enter your password">
+                <p id="exist" class="text-danger"></p>
+                <button class="btn btn-outline-info w-100 my-3" id="btnUp" >Sign Up</button>
+                <p class="text-white">You have an account? 
+                    <a href="#SignIn" id="btnCIn" class="text-white text-decoration-none">Signin</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section id="home" class="d-none">
+        <nav class="nav navbar-expand home navbar-dark p-2">
+            <div class="container">
+                <div class="element d-flex justify-content-between">
+                    <a href="#" class="navbar-brand text-white fs-3">SMART LOGIN</a>
+                    <a href="#">
+                        <button  class="btn  btn-outline-warning"  id="btnOut">Log Out</button>
+                    </a>
+                    
+                </div>
+            </div>
+    
+        </nav>
+        <section>
+            <div class="container my-5 text-center">
+                <div class="home m-auto w-75 p-5">
+                    <h1 id="welcome"></h1>
+                </div>
+            </div>
+        </section>
+    </section>
+    <script src="js/index.js"></script>
+    
+</body>
+</html>
